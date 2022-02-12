@@ -12,7 +12,7 @@ public class Skyscraper : MonoBehaviour {
 	void Update () {
 
 		// despawn when past left edge of the screen (camera)
-		if (transform.position.x < -25) {
+		if (transform.position.x < -30) {
 			Destroy(gameObject);
 		}
 		else {

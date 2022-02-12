@@ -25,7 +25,7 @@ public class CoinSpawner : MonoBehaviour {
 
 			// instantiate all coins in this row separated by some random amount of space
 			for (int i = 0; i < coinsThisRow; i++) {
-				Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(26, Random.Range(-10, 10), 10), Quaternion.identity);
+				Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(30, Random.Range(-10, 10), 10), Quaternion.identity);
 			}
 
 			// pause 1-5 seconds until the next coin spawns

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Coin : MonoBehaviour {
 
+	public int ObjectValue = 1;
 	// Use this for initialization
 	void Start () {
 
@@ -12,7 +13,7 @@ public class Coin : MonoBehaviour {
 	void Update () {
 
 		// despawn coin if it goes past the left edge of the screen
-		if (transform.position.x < -25) {
+		if (transform.position.x < -30) {
 			Destroy(gameObject);
 		}
 		else {
@@ -28,7 +29,7 @@ public class Coin : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 
 		// trigger coin pickup function if a helicopter collides with this
-		other.transform.parent.GetComponent<HeliController>().PickupCoin();
+		other.transform.parent.GetComponent<HeliController>().PickupObject(ObjectValue);
 		Destroy(gameObject);
 	}
 }

@@ -22,7 +22,7 @@ public class SkyscraperSpawner : MonoBehaviour {
 		while (true) {
 
 			// create a new skyscraper from prefab selection at right edge of screen
-			Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(26, Random.Range(-20, -12), 11),
+			Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(30, Random.Range(-20, -12), 11),
 				Quaternion.Euler(-90f, 0f, 0f));
 
 			// randomly increase the speed by 1

@@ -53,8 +53,8 @@ public class HeliController : MonoBehaviour {
 		rb.velocity = new Vector3(horizontal, vertical, 0);
 	}
 
-	public void PickupCoin() {
-		coinTotal += 1;
+	public void PickupObject(int value) {
+		coinTotal += value;
 
 		// trigger audio playback and emit particles from particle system
 		GetComponents<AudioSource>()[0].Play();
@@ -67,7 +67,7 @@ public class HeliController : MonoBehaviour {
 		// set explosion position to helicopter's and emit
 		explosion.transform.position = transform.position;
 		explosion.Play();
-		
+
 		Destroy(gameObject);
 	}
 }
