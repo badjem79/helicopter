@@ -11,4 +11,4 @@ https://cs50.harvard.edu/games/2018/weeks/8/
 * Fix the bug whereby the scroll speed of planes, coins, and buildings doesn’t reset when the game is restarted via the space bar. This one’s a one-liner; note that static variables aren’t actually reset upon loading a scene, so a place to check would be the SkyscraperSpawner, as the speed field therein is what actually drives the speed for Skyscrapers, Airplanes, and Coins! However, we won’t find that this is the place where the game is reset upon pressing the space bar, and thus changing speed here doesn’t make much sense; any guesses as to where the code for resetting the game could be located?
 
 # Video of the Demo
-https://youtu.be/XXX
+https://youtu.be/kw2b00N3YjY
